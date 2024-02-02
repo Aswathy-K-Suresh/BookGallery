@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #77141f;
+    height: 50px;
+}
+
+header h1 {
+    padding: 5px;
+    color: rgb(229, 226, 223);
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+#banner {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://i.etsystatic.com/23719212/r/il/fb0389/2660290993/il_fullxfull.2660290993_tiza.jpg');
+}
+
+.row {
+    background-color: #77141f;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding: 5px;
+}
+
+.col {
+    background-color: #8f414a;
+    width: 300px;
+    height: 480px;
+    margin: 10px;
+    padding: 0px;
+    border-radius: 40px;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    border-radius: 40px;
+}
+
+button {
+    padding: 5px;
+    background-color: #611922;
+    font-size: large;
+    border-radius: 20px;
+}
+
+button:hover {
+    color: rgb(242, 13, 13);
+}
+
+button a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media only screen and (max-width: 400px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+      height: 2500px;
+      width: 390px; 
+    }   
+    #banner {
+        width: 400px; 
+    }
+    .col {
+        width: 350px; 
+        border-radius: 10px;
+    }
+    img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+    }
+}
